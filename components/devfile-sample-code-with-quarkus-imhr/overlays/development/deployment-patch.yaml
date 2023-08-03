@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-imhr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-rkrf-tenant/quarkus/devfile-sample-code-with-quarkus-imhr@sha256:a22161acc29bc5747b42ea1729065d62a2548a93bd1a2151b2a25caefa29904f
+        name: my-java-quarkus
+        resources: {}
+status: {}
